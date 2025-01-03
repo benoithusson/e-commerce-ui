@@ -1,0 +1,42 @@
+1. Qu'est-ce que Next.js ?
+Next.js est un framework JavaScript basé sur React qui permet de créer des applications web et des sites statiques de manière simple et rapide.
+Il offre des fonctionnalités intégrées pour le routage, la gestion des pages, et le rendement des applications, ce qui simplifie le développement d'applications React.
+
+2. Principaux avantages de Next.js :
+
+1. Rendu côté serveur (SSR - Server-Side Rendering) :
+Next.js permet de rendre les pages sur le serveur avant de les envoyer au client.
+Cela améliore les performances et le référencement SEO (les moteurs de recherche peuvent indexer facilement le contenu rendu côté serveur).
+
+2. Génération de pages statiques (SSG - Static Site Generation) :
+Next.js peut générer des pages statiques lors de la construction du projet.
+Cela permet des pages ultra-rapides car elles sont déjà prêtes à être servies sans recalculer le contenu à chaque requête.
+
+3. Rendu côté client (CSR - Client-Side Rendering) :
+Vous pouvez aussi utiliser React en mode rendu côté client pour les interactions dynamiques après le chargement de la page initiale.
+
+4. Incremental Static Regeneration (ISR) :
+Permet de mettre à jour le contenu d'une page statique sans avoir à reconstruire tout le site. Cela offre des pages statiques actualisées en temps réel.
+
+5. Routage basé sur le système de fichiers :
+Le routage automatique fonctionne en fonction des fichiers dans le dossier pages/. Chaque fichier JavaScript représente une route.
+Vous n'avez pas besoin de configurer manuellement les routes.
+
+6. Support TypeScript intégré :
+Next.js offre un support natif pour TypeScript, ce qui permet une meilleure gestion des types et des erreurs en développement.
+
+7. Optimisation des performances automatique :
+Il optimise automatiquement le code splitting et le lazy loading, ce qui permet de charger uniquement les parties nécessaires de l'application.
+Cela réduit le temps de chargement et améliore l'expérience utilisateur.
+
+8. API Routes :
+Dans Next.js 13 avec App Router, le système de routage est désormais basé sur la structure des fichiers et dossiers dans le répertoire app/. Chaque fichier ou dossier que vous ajoutez dans app/ correspond automatiquement à une route dans votre application, sans que vous ayez à définir explicitement les routes comme dans les anciennes versions de Next.js.
+
+9. Prise en charge des images optimisées :
+Avec le composant <Image />, Next.js optimise automatiquement la taille des images et gère le lazy loading pour améliorer les performances.
+
+10. Déploiement facile :
+Next.js fonctionne très bien avec Vercel, la plateforme de déploiement officielle, et d'autres services comme Netlify et AWS. Il suffit généralement de pousser votre code pour déployer automatiquement.
+
+11. Développement simplifié avec Hot Reloading :
+Le système de hot reloading vous permet de voir instantanément les modifications lors de l'édition des fichiers sans avoir à recharger manuellement la page.

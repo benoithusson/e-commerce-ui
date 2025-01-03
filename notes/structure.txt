@@ -1,0 +1,9 @@
+/app
+Remplace le dossier /pages
+C'est là que se fait notre routing
+
+app / page.js
+page d'accueuil du site
+Ne peut pas être changé
+Correspond à la route /
+
