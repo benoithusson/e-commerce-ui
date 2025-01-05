@@ -1,0 +1,25 @@
+@use '../../styles/variables' as *;
+
+.hero-section-container {
+    background-color: beige;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 15.625rem;
+    height: 100vh;
+}
+
+.hero-section-title {
+    background-color: aquamarine;
+    max-width: 60%;
+    text-align: center;
+
+    p {
+        white-space: pre-wrap;
+    }
+}
+
+.hero-section-btn {
+    text-align: center;
+}

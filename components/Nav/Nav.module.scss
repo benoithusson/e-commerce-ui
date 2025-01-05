@@ -1,0 +1,23 @@
+@use '../../styles/variables' as *;
+
+.nav-container {
+    display: flex;
+    justify-content: space-between;
+    background-color: skyblue;
+    padding: $padding;
+
+    ul {
+        display: flex;
+        align-items: center;
+        gap: 20px;
+        list-style: none; 
+    }
+}
+
+.main-nav {
+    background-color: gray;
+}
+
+.secondary-nav {
+    background-color: white;
+}

@@ -1,6 +1,5 @@
-@import '../styles/variables';
+@use '../styles/variables.scss' as *;
 
 .page-container {
-    padding-left: $padding;
-    padding-right: $padding;
-  }
+    padding: $padding;
+}
