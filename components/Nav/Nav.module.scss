@@ -3,21 +3,39 @@
 .nav-container {
     display: flex;
     justify-content: space-between;
-    background-color: skyblue;
-    padding: $padding;
+    color: $font-primary-black;
+    padding: $padding-24px $padding-56px $padding-24px $padding-56px;
+}
 
-    ul {
-        display: flex;
-        align-items: center;
-        gap: 20px;
-        list-style: none; 
-    }
+.nav-container ul {
+    display: flex;
+    align-items: center;
+    list-style: none; 
 }
 
 .main-nav {
-    background-color: gray;
+    font-weight: $font-weight-bold;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 1.5rem; //24px
 }
 
 .secondary-nav {
-    background-color: white;
+    gap: 1.5rem; //24px
+}
+
+.secondary-nav li {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 0.25rem;
+}
+ 
+.secondary-nav span {
+    font-weight: $font-weight-bold;
+}
+
+.secondary-nav img {
+    color: $font-primary-white;
 }

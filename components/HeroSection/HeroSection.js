@@ -22,7 +22,7 @@ export default function HeroSection () {
   const [error, setError] = useState(null);
 
   useEffect(() => {
-    fetch('/data.json')
+    fetch('/data/data.json')
       .then((response) => {
         if(!response.ok) {
           throw new Error ('ERROR');
@@ -56,11 +56,8 @@ export default function HeroSection () {
 
   return (
     <section className={styles['hero-section-container']}>
-      <div className={styles['hero-section-title']}>
-        <h1>{data.title}</h1>
-        <p>{data.description}</p>
-      </div>
-      <div className={styles['hero-section-btn']}>
+      <div className={styles['hero-section-text']}>
+        <h1>{data.text}</h1>
         <Button 
           label={"Shop now"}
           onClick={() => console.log("Hello")}

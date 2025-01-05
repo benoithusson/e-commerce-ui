@@ -61,3 +61,23 @@
     font-weight: $font-weight-italic-black;
     font-style: italic;
 }
+
+/* CUSTOM */
+@font-face {
+    font-family: 'CustomFontGroove'; /* Donne un nom à la police */
+    src: url('/fonts/groove.woff2') format('woff2'), /* Format moderne et optimisé */
+         url('/fonts/groove.woff') format('woff'),   /* Format intermédiaire */
+         url('/fonts/groove.ttf') format('truetype'); /* Format pour la compatibilité plus ancienne */
+    font-weight: normal;
+    font-style: normal;
+  }
+
+  @font-face {
+    font-family: 'CustomFontGranite'; /* Donne un nom à la police */
+    src: url('/fonts/granite.woff2') format('woff2'), /* Format moderne et optimisé */
+         url('/fonts/granite.woff') format('woff'),   /* Format intermédiaire */
+         url('/fonts/granite.ttf') format('truetype'); /* Format pour la compatibilité plus ancienne */
+    font-weight: normal;
+    font-style: normal;
+  }
+  

@@ -1,12 +1,15 @@
 /* Color */
 $main-color: rgb(255,255,255);
-$font-primary: rgb(36, 36, 36);
+$font-primary-black: rgb(25, 25, 25);
+$font-primary-white: rgb(255, 255, 255);
 $accent-color: #0070f3;
 
 /* Spacing variables */
-$padding: 1.5rem;
+$padding-56px: 3.5rem;
+$padding-24px: 1.5rem;
 
-/* Font-variable */
+/* Font-size */
+$headline-h1: 6rem; // 96px
 $headline-h1: 6rem;
 
 /* Font-familiy */

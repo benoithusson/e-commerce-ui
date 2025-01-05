@@ -1,16 +1,11 @@
 import styles from './Nav.module.scss';
 import Link from 'next/link';
-import Icon from '../../public/icons/brand.svg';
+import BrandLogo from '../BrandLogo/BrandLogo';
 
 export default function Nav(props) {
     return (
         <nav className={styles['nav-container']}>
             <ul className={styles['main-nav']}>
-                <li>
-                    <Link href=''>
-                        <img src="../../icons/brand.svg" width={50} height={50} />
-                    </Link>
-                </li>
                 <li>
                     <Link href=''>Categories</Link>
                 </li>
@@ -27,18 +22,23 @@ export default function Nav(props) {
                     <Link href=''>Find store</Link>
                 </li>
             </ul>
+            <ul>
+                <li>
+                    <BrandLogo/>
+                </li>
+            </ul>
             <ul className={styles['secondary-nav']}>
                 <li>
-                    <span>Icon</span>
-                    <span>Label</span>
+                    <img src="../../icons/search.svg" width={24} height={24} />
+                    <span>Search</span>
                 </li>
                 <li>
-                    <span>Icon</span>
-                    <span>Label</span>
+                    <img src="../../icons/bag.svg" width={24} height={24} />
+                    <span>Chart (0)</span>
                 </li>
                 <li>
-                    <span>Icon</span>
-                    <span>Label</span>
+                    <img src="../../icons/user.svg" width={24} height={24} />
+                    <span>Login</span>
                 </li>
             </ul>
         </nav>

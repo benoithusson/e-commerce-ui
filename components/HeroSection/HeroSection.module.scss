@@ -1,25 +1,25 @@
 @use '../../styles/variables' as *;
 
 .hero-section-container {
-    background-color: beige;
     display: flex;
     flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    gap: 15.625rem;
-    height: 100vh;
+    justify-content: start;
+    align-items: start;
 }
 
-.hero-section-title {
-    background-color: aquamarine;
-    max-width: 60%;
-    text-align: center;
+.hero-section-text {
+    padding: $padding-56px; 
+    max-width: 40%;
+    color: $font-primary-black;
+
+    h1 {
+        font-size: 72px;// 80px
+        line-height: calc(72px*1.1);
+        padding-bottom: 5.5rem;
+    }
 
     p {
+        font-weight: $font-weight-bold;
         white-space: pre-wrap;
     }
-}
-
-.hero-section-btn {
-    text-align: center;
 }

@@ -4,9 +4,10 @@
     height: 2.75rem; //48px
     padding: 0 4.25rem 0 4.25rem; // 68px
     border-radius: 1.25rem; // 20px
-    border: 0.063rem solid $font-primary; // 1px
-    color: $font-primary;
+    border: 0.063rem solid $font-primary-black; // 1px
+    color: $font-primary-black;
     background-color: $main-color;
+    cursor: pointer;
     transition: all 0.2s linear;
 }
 
