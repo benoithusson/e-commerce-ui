@@ -1,25 +1,32 @@
-@use '../../styles/variables' as *;
+@use "../../styles/variables" as *;
 
 .hero-section-container {
-    display: flex;
-    flex-direction: column;
-    justify-content: start;
-    align-items: start;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+  z-index: 4;
 }
 
 .hero-section-text {
-    padding: $padding-56px; 
-    max-width: 40%;
-    color: $font-primary-black;
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+  padding: 11.75rem $padding-56px;
+  max-width: 50%;
+  color: $font-primary-black;
+  z-index: 3;
+  color: white;
 
-    h1 {
-        font-size: 72px;// 80px
-        line-height: calc(72px*1.1);
-        padding-bottom: 5.5rem;
-    }
+  h1 {
+    font-size: 56px;
+    font-family: $font-family-extrabold;
+    font-weight: $font-weight-black;
+    line-height: calc(56px * 1.1);
+    text-transform: uppercase;
+  }
 
-    p {
-        font-weight: $font-weight-bold;
-        white-space: pre-wrap;
-    }
+  p {
+    white-space: pre-wrap;
+  }
 }

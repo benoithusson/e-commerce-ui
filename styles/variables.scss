@@ -1,30 +1,33 @@
+/* Spacing variables */
+$padding-56px: 3.5rem;
+$padding-24px: 1.5rem;
+
 /* Color */
 $main-color: rgb(255,255,255);
 $font-primary-black: rgb(25, 25, 25);
 $font-primary-white: rgb(255, 255, 255);
 $accent-color: #0070f3;
 
-/* Spacing variables */
-$padding-56px: 3.5rem;
-$padding-24px: 1.5rem;
-
 /* Font-size */
 $headline-h1: 6rem; // 96px
 $headline-h1: 6rem;
 
 /* Font-familiy */
-$font-family: 'Roboto', Arial, Helvetica, sans-serif;
+$font-family: 'Futura PT', sans-serif;
+$font-family-regular: 'Futura PT Regular', sans-serif;
+$font-family-italic: 'Futura PT Italic', sans-serif;
+$font-family-bold: 'Futura PT Bold', sans-serif;
+$font-family-bold-italic: 'Futura PT Bold Italic', sans-serif;
+$font-family-light: 'Futura PT Light', sans-serif;
+$font-family-light-italic: 'Futura PT Light Italic', sans-serif;
+$font-family-medium: 'Futura PT Medium', sans-serif;
+$font-family-medium-italic: 'Futura PT Medium Italic', sans-serif;
+$font-family-extrabold: 'Futura PT Extra Bold', sans-serif;
+$font-family-extrabold-italic: 'Futura PT Extra Bold Italic', sans-serif;
 
 /* Font-weight */
-$font-weight-thin: 100;
-$font-weight-light: 300;
-$font-weight-regular: 400;
+$font-weight-light: lighter;
+$font-weight-regular: normal;
 $font-weight-medium: 500;
-$font-weight-bold: 700;
-$font-weight-black: 900;
-$font-weight-italic-thin: 100;
-$font-weight-italic-light: 300;
-$font-weight-italic-regular: 400;
-$font-weight-italic-medium: 500;
-$font-weight-italic-bold: 700;
-$font-weight-italic-black: 900;
+$font-weight-bold: bold;
+$font-weight-black: 800;

@@ -1,0 +1,72 @@
+Dans Next.js, il y a une distinction entre : 
+_____________________________________________
+
+A - Les composants rendu côté serveur (Server Components)
+
+1 - Définition
+    - C'est-à-dire des composants qui sont construits au moment du build sur le serveur et le serveur renvoit du HTML au navigateur.
+    - C'est un composant qui récupère ses données directement sur le serveur, puis envoie du HTML prêt au client. 
+
+2 - Avantages
+    - Rapide : Comme le serveur ne renvoit que du HTML navigateur, la page s'affiche plus vite. On ne renvoit pas de javaScript lourd qui peut être long à charger.
+    - Optimisation du SEO : Le seveur renvoit au navigateur une page avec un contenu complet ce qui permet aux moteurs de recherche de l'indexer rapidement, sans avoir besoin d'attendre que le JavaScript soit exécuté pour récupérer les données.
+
+3- Quand les utiliser ?
+    - Quand j'ai besoin de données avant que la page s'affiche :  si tu veux afficher une liste de produits dès le début.
+    - Utile pour des pages qui nécessitent beaucoup de données à charger avant de les afficher, comme des pages de produits, des blogs, ou des articles.
+
+4 - Exemple fonctionnement
+    a - Les données sont récupérées directement sur le serveur, avant même que la page soit envoyée au client.
+    b - Le HTML est ensuite envoyé déjà complet avec les données, ce qui permet au navigateur d'afficher la page plus rapidement, sans avoir besoin d'attendre que le JavaScript récupère les données.
+
+5 - Code pour récupération de données
+    - On utilise async et await : tant que les données ne sont pas récupérées, on n'affiche pas la page.
+    - Permet donc d'attendre les données AVANT d'afficher la page.
+    - Exemple 
+
+    export default async function ProductsList() {
+      const res = await fetch("http://localhost:3000/api/products");
+      const productsList = await res.json();
+      console.log("Liste products API", productsList);
+    }
+
+_____________________________________________
+
+B - Les composants rendu côté client (Client Components)
+
+1 - Définition
+    - Composant qui s'éxecute uniquement dans le navigateur aprés que le HTML de base ait été chargé
+
+2 - Quand les utiliser ?
+    - Quand on veut récupérer des données après que le premier rendering de la page : pour des informations qui ne sont pas essentielles au début.
+    - Quand il faut réagir aux actions de l'utilisateur : Un bouton qui change d'état après avoir été cliqué, Un formulaire qui affiche un message de confirmation après la soumission...
+
+3 - Important
+    - C'est un composant qui utilise du javaScript. 
+    - Si un client component a besoin de données, il faut utiliser du javaScript avec Fetch ce qui peut retarder le rendu et affecter la performance.
+    - IMPORTANT : TOUJOURS mettre 'use client' au début du composant pour indiquer que c'est un client component
+
+4 - Récupération de données
+    - On utilise Fetch dans useEffect()
+    - Exemple 
+
+    "use client" ;
+
+useEffect(() => {
+    fetch('/data.json')
+      .then((response) => {
+        if(!response.ok) {
+          throw new Error ('ERROR');
+        }
+        return response.json()
+      })
+      .then((data) => {
+        setData(data.hero_section[0]);
+        setLoading(false);
+      })
+      .catch((error) => {
+        setError(error.message);
+        setLoading(false);
+        console.error('Error loading JSON data:', error);
+      });
+    }, []);

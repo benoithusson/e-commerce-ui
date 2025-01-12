@@ -1,0 +1,2 @@
+Si les données doivent être utilisées sur plusieurs pages.
+Exemple : Un menu ou une barre latérale qui affiche les produits les plus populaires.

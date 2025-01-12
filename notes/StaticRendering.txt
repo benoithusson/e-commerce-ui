@@ -1,0 +1,116 @@
+- Pour generer des pages dites statiques
+  Quand les données ne changent pas souvent
+  La page est entièrement rendue côté serveur avant d'être servie à l'utilisateur 
+  Pages faites au moment de la compilation
+
+- Exemples de cas d'utilisation
+    Une page produit (catalogue e-commerce) avec des informations rarement mises à jour.
+    Un blog ou une page d'article.
+    Une page de portfolio ou de présentation.
+
+- Avantages
+    Bon pour le SEO : Les moteurs de recherche peuvent facilement indexer les pages statiques car elles sont déjá générées
+    Le temps de chargement est réduit puisque les pages sont déjá créées et envoyées par le serveur.
+    La page se charge plus vite car le navigateur n'a pas besoin de charger du JavaScript supplémentaire pour afficher la page : la page est déjá générée par le serveur
+
+- Quesion à se poser pour savoir quand l'utiliser ?
+    Est-ce que le contenu de cette page est le même pour tous les utilisateurs et peut-il être généré à l'avance ?
+
+
+________________________________________________________
+
+
+Pour récupérer des données afin de générer une page statique, on a deux moyens :
+
+________________________________________________________
+
+
+1. Si le routing de mon projet utilise /pages - avec getStaticProps
+
+- IMPORTANT
+  À utiliser seulement si j'utilise le dossier /pages pour le router et non /app
+  Si j'utilise /app, je n'utilise pas getStaticProps
+  S'utilise toujours pour une page, pas pour un composant
+
+- Exemple de code : 
+
+import styles from './HeroSection.module.scss';
+import fs from 'fs';
+import path from 'path';
+
+export async function getStaticProps() {
+
+  // 1
+  // filePath = Emplacement du fichier que je veux lire
+  // path.join() = Permet de construire un chemin de fichier en combinant plusieurs éléments
+  // cwd() = Current Working directory, pour obtenir le chemin absolu du fichier que je veux á partir de la racine du projet
+  // cwd() = Par exemple, si mon projet est dans /Users/ton-utilisateur/mon-projet, process.cwd() renverra ce chemin.  
+  const filePath = path.join(process.cwd(), 'data', 'heroData.json');
+  
+  // 2
+  // fileData = Lecture du fichier JSON
+  // readFileSync = Lit un fichier de manière synchrone (c'est-à-dire, tout de suite et sans passer à autre chose tant que la lecture n'est pas terminée).
+  const fileData = fs.readFileSync(filePath, 'utf8');
+  
+  // 3
+  // Pour transformer les données en un object javaScript
+  const heroData = JSON.parse(fileData);
+
+  // 4
+  // Retourner les données comme props pour les utiliser dans mon composants
+  return {
+    props: {
+      heroData: heroData.hero_section[0]  // Accéder à la première entrée de "hero_section"
+    }
+  };
+}
+
+// 5
+// Importer les données dans mon composant
+export default const HeroSection = ({ heroData }) => {
+  return (
+    <section>
+      <h1>{heroData.title}</h1>
+      <p>{heroData.description}</p>
+    </section>
+  );
+};
+
+
+________________________________________________________
+
+2. Si le routing de mon projet utilise /pages
+
+- Sans getStaticProps
+- Se fait directement dans le composant et non à l'extérieur comme avec getStaticProps()
+
+
+- Exemple de code :
+
+import fs from 'fs';
+import path from 'path';
+
+export default async function Home() {
+  // Charger les données depuis le fichier JSON
+  const filePath = path.join(process.cwd(), 'data', 'heroData.json');
+  const fileData = fs.readFileSync(filePath, 'utf8');
+  const heroData = JSON.parse(fileData);
+
+  // Récupérer les données du "hero_section"
+  const heroSection = heroData.hero_section[0]; // Accéder à la première entrée
+
+  return (
+    <main>
+      <HeroSection heroData={heroSection} />
+    </main>
+  );
+}
+
+function HeroSection({ heroData }) {
+  return (
+    <section>
+      <h1>{heroData.title}</h1>
+      <p>{heroData.description}</p>
+    </section>
+  );
+}

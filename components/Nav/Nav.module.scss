@@ -1,41 +1,43 @@
-@use '../../styles/variables' as *;
+@use "../../styles/variables" as *;
 
 .nav-container {
-    display: flex;
-    justify-content: space-between;
-    color: $font-primary-black;
-    padding: $padding-24px $padding-56px $padding-24px $padding-56px;
+  display: flex;
+  justify-content: space-between;
+  background-color: white;
+  padding: 0.5rem $padding-56px 0.5rem $padding-56px;
+  position: relative;
+  z-index: 4;
 }
 
 .nav-container ul {
-    display: flex;
-    align-items: center;
-    list-style: none; 
+  display: flex;
+  align-items: center;
+  list-style: none;
 }
 
 .main-nav {
-    font-weight: $font-weight-bold;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    gap: 1.5rem; //24px
+  font-weight: $font-weight-bold;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 1.5rem; //24px
 }
 
 .secondary-nav {
-    gap: 1.5rem; //24px
+  gap: 1.5rem; //24px
 }
 
 .secondary-nav li {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    gap: 0.25rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.25rem;
 }
- 
+
 .secondary-nav span {
-    font-weight: $font-weight-bold;
+  font-weight: $font-weight-bold;
 }
 
 .secondary-nav img {
-    color: $font-primary-white;
+  color: $font-primary-white;
 }

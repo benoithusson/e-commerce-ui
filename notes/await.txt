@@ -1,0 +1,22 @@
+
+- Définition
+    Pour indiquer que l'on veut attendre la réponse de l'URL / API pour continuer à éxécuter le reste du code.
+    Quand tu utilises await, tu dis à JavaScript : "attends que cette opération soit terminée avant de passer à la suivante".
+
+- Pourquoi est-ce important ?
+    Avec await, on évite de traiter des données avant qu'elle ne soit prête. 
+    Si tu essaies d'utiliser des données qui n'ont pas encore été récupérées (comme une réponse d'API), ton application pourrait planter ou afficher des informations incorrectes.
+
+_______________________________________________________________
+
+Exemple sans await : Sans await, la ligne 2 pourrait s'éxécuter AVANT que la ligne 1 soit terminée ce qui pourrait provoquer des erreurs
+
+const res = fetch('https://api.example.com/products'); // 1
+const products = await res.json(); // 2
+
+_______________________________________________________________
+
+Exemple avec await : Avec await, la ligne 2 ne peut pas s'éxécuter tant que la ligne 1 n'est pas terminée
+
+const res = await fetch('https://api.example.com/products'); // 1
+const products = await res.json(); // 2

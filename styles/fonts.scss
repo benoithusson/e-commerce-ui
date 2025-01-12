@@ -1,83 +1,20 @@
-@use './variables' as *;
+/* SPECIAL CUSTOM FONTS */
 
-/* REGULAR */
-.font-regular-thin {
-    font-weight: $font-weight-thin;
-    font-style: normal;
-}
-
-.font-regular-light {
-    font-weight: $font-weight-light;
-    font-style: normal;
-}
-
-.font-regular-regular {
-    font-weight: $font-weight-regular;
-    font-style: normal;
-}
-
-.font-regular-medium {
-    font-weight: $font-weight-medium;
-    font-style: normal;
-}
-
-.font-regular-bold {
-    font-weight: $font-weight-bold;
-    font-style: normal;
-}
-
-.font-regular-black {
-    font-weight: $font-weight-black;
-    font-style: normal;
-}
-
-.font-italic-thin {
-    font-weight: $font-weight-italic-thin;
-    font-style: italic;
-}
-
-/* ITALIC */
-.font-italic-light {
-    font-weight: $font-weight-italic-light;
-    font-style: italic;
-}
-
-.font-italic-regular {
-    font-weight: $font-weight-italic-regular;
-    font-style: italic;
-}
-
-.font-italic-medium {
-    font-weight: $font-weight-italic-medium;
-    font-style: italic;
-}
-
-.font-italic-bold {
-    font-weight: $font-weight-italic-bold;
-    font-style: italic;
-}
-
-.font-italic-black {
-    font-weight: $font-weight-italic-black;
-    font-style: italic;
-}
-
-/* CUSTOM */
 @font-face {
-    font-family: 'CustomFontGroove'; /* Donne un nom à la police */
-    src: url('/fonts/groove.woff2') format('woff2'), /* Format moderne et optimisé */
-         url('/fonts/groove.woff') format('woff'),   /* Format intermédiaire */
-         url('/fonts/groove.ttf') format('truetype'); /* Format pour la compatibilité plus ancienne */
+    font-family: 'CustomFontGroove';
+    src: url('/fonts/groove.woff2') format('woff2'),
+         url('/fonts/groove.woff') format('woff'),
+         url('/fonts/groove.ttf') format('truetype');
     font-weight: normal;
     font-style: normal;
-  }
+}
 
-  @font-face {
-    font-family: 'CustomFontGranite'; /* Donne un nom à la police */
-    src: url('/fonts/granite.woff2') format('woff2'), /* Format moderne et optimisé */
-         url('/fonts/granite.woff') format('woff'),   /* Format intermédiaire */
-         url('/fonts/granite.ttf') format('truetype'); /* Format pour la compatibilité plus ancienne */
-    font-weight: normal;
-    font-style: normal;
-  }
+@font-face {
+     font-family: 'CustomFontGranite';
+     src: url('/fonts/granite.woff2') format('woff2'),
+          url('/fonts/granite.woff') format('woff'),
+          url('/fonts/granite.ttf') format('truetype');
+     font-weight: normal;
+     font-style: normal;
+}
   

@@ -1,9 +1,10 @@
-import styles from './Button.module.scss';
+"use client";
+import styles from "./Button.module.scss";
 
-export default function Button({label}) {
+export default function Button({ label }) {
   return (
-      <a href="/">
-        <button className={styles['button']}>{label}</button>
-      </a>
+    <a href="/">
+      <button className={styles["button"]}>{label}</button>
+    </a>
   );
-};
+}

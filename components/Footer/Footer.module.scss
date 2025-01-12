@@ -1,7 +1,7 @@
-@use '../../styles/variables.scss' as *;
+@use "../../styles/variables.scss" as *;
 
 .footer-container {
-    background-color: salmon;
-    padding-left: $padding-24px;
-    padding-right: $padding-24px;
+  background-color: salmon;
+  padding-left: $padding-24px;
+  padding-right: $padding-24px;
 }

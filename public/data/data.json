@@ -1,8 +1,9 @@
 {
   "hero_section": [
     {
-      "title": "Alpine Edge",
-      "text": "Ride the mountains. Feel the rush."
+      "brand": "Alpine Edge",
+      "title": "Ride the mountains. Feel the rush.",
+      "text": "Our latest freeride collection is built to shield you on bold descents, while giving you the freedom to showcase your style."
     }
   ]
 }

@@ -1,0 +1,36 @@
+
+1. Créer une API dans /pages/api ou /app/api
+    Dans /app, les API doivent être créées dans /app/api/[route]/route.js
+    /app/api/products/route.js
+
+________________________________________________________
+
+2. Créer une API route dans /app/api/products/route.js
+
+// Fonction qui gère les requêtes HTTP GET
+// request = objet contenant les détails de la requête
+export async function GET(request) {
+  
+  // On définie une liste de produits
+  const products = [
+    { id: 1, name: 'Ski Jacket', price: 199.99, rating: 4.5 },
+    { id: 2, name: 'Snowboard Boots', price: 149.99, rating: 4.2 },
+    { id: 3, name: 'Ski Poles', price: 49.99, rating: 4.8 },
+  ];
+
+  // Retourner une réponse HTTP convertit en JSON
+  return new Response(JSON.stringify(products), {
+    headers: { 'Content-Type': 'application/json' },
+  });
+}
+
+________________________________________________________
+
+
+3. Quand ce code sera utilisé ? 
+    Quand un utilisateur accède à l'URL de cette API route /api/products
+
+________________________________________________________
+
+4. Pourquoi on appelle ca API route ?
+    C'est un chemin (route) sur mon serveur qui nous permet d'accéder á des données et de les utiliser dans notre application.

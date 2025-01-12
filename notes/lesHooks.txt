@@ -1,8 +1,52 @@
-En React, les hooks comme useState, useEffect, etc., ne peuvent être utilisés que dans des composants client-side (côté client), 
-c'est-à-dire des composants qui sont rendus dans le navigateur.
+En React, les hooks ne peuvent être utilisés que dans des composants client-side (côté client), c'est-à-dire des composants qui sont rendus dans le navigateur.
 
 Dans Next.js, il y a une distinction entre les composants côté serveur (Server Components) et les composants côté client (Client Components). 
-Lorsque vous utilisez des hooks comme useState, vous devez vous assurer que le composant est un Client Component, car ces hooks ne fonctionnent pas côté serveur.
 
-Vous devez marquer explicitement votre fichier comme un Client Component en ajoutant la directive "use client" en haut du fichier où vous utilisez des hooks React.
+Lorsque vous utilisez des hooks, vous devez vous assurer que le composant est un Client Component, car ces hooks ne fonctionnent pas côté serveur. 
 
+On doit donc mettre "use client" en haut du fichier.
+
+______________________________________________________________________________________________________________________________________
+
+1. useEffect
+
+- Definition
+    Pour exécuter une action après le rendu initial (lorsque le composant est monté)
+
+- Quand l'utiliser ?
+    Pour aller chercher des données et les mettre dans le composant aprés le rendu initial
+    Pour récupérer des données via une API, mettre à jour des variables, interagir avec des éléments du DOM...
+    Pour effectuer un nettoyage avant que le composant soit démonté (par exemple, annuler un abonnement à un événement).
+
+- Pourquoi faire un nettoyage ?
+    Permet aussi d'éviter des actions en arriére plan inutile et donc d'économiser des ressources
+    Exemple : Si vous créez des abonnements à des événements, vous devez les annuler lorsque le composant est démonté pour éviter que ces abonnements 
+    continuent à exister après que le composant ait été retiré de l'interface.
+
+- Que signifie le tableau vide [] à la fin de useEffect() ? 
+    Signifie que l'effet s'exécutera uniquement lors du montage du composant (au début de la vie du composant), et ne sera pas réexécuté lors des re-rendus (changements d'état ou de props).
+
+- Exemple de code 
+
+"use client" ;
+
+useEffect(() => {
+    fetch('/data.json')
+      .then((response) => {
+        if(!response.ok) {
+          throw new Error ('ERROR');
+        }
+        return response.json()
+      })
+      .then((data) => {
+        setData(data.hero_section[0]);
+        setLoading(false);
+      })
+      .catch((error) => {
+        setError(error.message);
+        setLoading(false);
+        console.error('Error loading JSON data:', error);
+      });
+    }, []);
+
+______________________________________________________________________________________________________________________________________

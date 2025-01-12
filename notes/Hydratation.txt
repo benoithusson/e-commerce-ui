@@ -1,0 +1,8 @@
+- Processus où le contenu HTML rendu côté serveur est "activé" côté client.
+
+
+- L'hydratation, c'est quand React "active" une page déjà affichée dans le navigateur.
+
+Avant : Le serveur envoie juste du HTML (le contenu que tu vois).
+Après : React charge son JavaScript et rend la page interactive (les boutons marchent, les formulaires peuvent être remplis, etc.).
+En gros, l'hydratation fait passer une page statique en une page dynamique.
