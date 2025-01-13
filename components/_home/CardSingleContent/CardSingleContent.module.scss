@@ -1,0 +1,16 @@
+.card-container {
+  width: 50%;
+  height: 600px;
+  padding: 24px;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-image: var(--bg-image);
+  z-index: 2;
+}
+
+.card-container h2 {
+  // font-size: 64px;
+  color: var(--color);
+  z-index: 3;
+}

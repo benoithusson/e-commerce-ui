@@ -1,5 +1,5 @@
-@use './variables' as *;
-@use './fonts' as *;
+@use "./variables" as *;
+@use "./fonts" as *;
 
 :root {
   font-family: $font-family;
@@ -20,9 +20,21 @@ body {
 }
 
 h1 {
-  font-size: 3.5rem;
   font-weight: $font-weight-black;
-  line-height: calc(3.5rem*1.1);
+  font-size: 56px;
+  font-family: $font-family-extrabold;
+  font-weight: $font-weight-black;
+  line-height: calc(56px * 1.1);
+  text-transform: uppercase;
+}
+
+h2 {
+  font-weight: $font-weight-black;
+  font-size: 56px;
+  font-family: $font-family-extrabold;
+  font-weight: $font-weight-black;
+  line-height: calc(64px * 1.1);
+  text-transform: uppercase;
 }
 
 a {

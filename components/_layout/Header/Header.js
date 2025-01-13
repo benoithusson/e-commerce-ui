@@ -6,7 +6,11 @@ export default function Header(props) {
   return (
     <header className={styles["header-container"]}>
       <Nav />
-      <HeroSection />
+      <HeroSection
+        title="Ride the moutains."
+        subTitle="Get ready to dive into winter with everything you need."
+        label="Shop now"
+      />
     </header>
   );
 }

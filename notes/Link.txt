@@ -1,0 +1,6 @@
+- Le composant <Link> est utilisé pour la navigation côté client
+- Il entoure automatiquement son contenu avec une balise <a> uniquement si ce contenu n'est pas déjà une balise <a>
+- Cependant, si vous utilisez une <div> ou un autre élément comme enfant direct de <Link>, il ne générera pas automatiquement de balise <a> ce qui peut poser des problèmes d'accessibilité et de sémantique HTML.
+- gérer la navigation interne sans recharger la page, ce qui permet de profiter du "client-side routing"
+
+Pour styliser une balise <Link>, il faut ajouter balise <a> dedans et ajouter legacyBehavior dans Link pour stylser <a></a>

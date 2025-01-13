@@ -1,27 +1,28 @@
-@use "../../styles/variables" as *;
+@use '../../styles/variables' as *;
+
 
 .product-card-container {
-  width: 100%;
+    width: 100%;
 }
 
 .image-container {
-  border-radius: 5px;
-  background-color: rgb(239, 239, 239);
-  padding: 1rem 0 1rem 0;
+    border-radius: 5px;
+    background-color: rgb(239, 239, 239);
+    padding: 1rem 0 1rem 0;
 }
 
 .product-details-container {
-  display: flex;
-
-  .name-and-price {
-    flex: 1;
-    padding: 0.5rem;
-  }
-
-  .add-to-cart-icon {
     display: flex;
-    justify-content: center;
-    align-items: center;
-    flex: 1;
-  }
+    
+    .name-and-price {
+        flex: 1;
+        padding: 0.5rem;
+    }
+    
+    .add-to-cart-icon {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex: 1;
+    }
 }

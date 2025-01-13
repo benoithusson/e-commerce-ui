@@ -1,32 +1,29 @@
-@use "../../styles/variables" as *;
+@use "../../../styles/variables.scss" as *;
 
 .hero-section-container {
   display: flex;
   flex-direction: column;
   justify-content: flex-start;
   align-items: flex-start;
+  background-image: url("/images/ski9.jpg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
   z-index: 4;
+  min-height: 800px;
 }
 
 .hero-section-text {
   display: flex;
   flex-direction: column;
-  gap: 2rem;
-  padding: 11.75rem $padding-56px;
+  gap: 3rem;
+  padding: 17rem $padding-56px;
   max-width: 50%;
   color: $font-primary-black;
   z-index: 3;
-  color: white;
-
-  h1 {
-    font-size: 56px;
-    font-family: $font-family-extrabold;
-    font-weight: $font-weight-black;
-    line-height: calc(56px * 1.1);
-    text-transform: uppercase;
-  }
 
   p {
     white-space: pre-wrap;
+    font-size: 24px;
   }
 }
