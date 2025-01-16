@@ -9,8 +9,10 @@ export default function ProductCard({ name, price, path }) {
         <Image
           src={`/images/products/${path}`}
           style={{ width: "100%", height: "auto" }}
-          width={200}
-          height={300}
+          width={100}
+          height={200}
+          quality={10}
+          priority
           alt=""
         />
       </div>

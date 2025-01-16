@@ -30,10 +30,17 @@ h1 {
 
 h2 {
   font-weight: $font-weight-black;
-  font-size: 56px;
+  font-size: 32px;
   font-family: $font-family-extrabold;
   font-weight: $font-weight-black;
-  line-height: calc(64px * 1.1);
+  line-height: calc(32px * 1.1);
+  text-transform: uppercase;
+}
+
+h3 {
+  font-size: 24px;
+  font-weight: $font-weight-black;
+  font-family: $font-family-extrabold;
   text-transform: uppercase;
 }
 

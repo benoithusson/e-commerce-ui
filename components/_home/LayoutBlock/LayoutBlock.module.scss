@@ -1,10 +1,12 @@
+@use "../../../styles/variables.scss" as *;
+
 .layoutblock-container {
-  margin-top: 124px;
+  margin-top: $spacing-114px;
 }
 
 .men-women-collection {
   display: flex;
-  gap: 24px;
+  gap: $spacing-8px;
   position: relative;
 
   &::before {

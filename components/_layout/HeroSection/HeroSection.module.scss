@@ -5,19 +5,14 @@
   flex-direction: column;
   justify-content: flex-start;
   align-items: flex-start;
-  background-image: url("/images/ski9.jpg");
-  background-size: cover;
-  background-position: center;
-  background-repeat: no-repeat;
-  z-index: 4;
-  min-height: 800px;
+  height: auto;
 }
 
 .hero-section-text {
   display: flex;
   flex-direction: column;
   gap: 3rem;
-  padding: 17rem $padding-56px;
+  margin: 19rem $spacing-56px 0 $spacing-56px;
   max-width: 50%;
   color: $font-primary-black;
   z-index: 3;

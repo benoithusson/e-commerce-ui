@@ -1,7 +1,7 @@
 import styles from "./ProductsList.module.scss";
 import ProductCard from "../ProductCard/ProductCard";
-import Link from "next/link";
 import Button from "../../Button/Button";
+import Link from "next/link";
 
 export default async function ProductsList() {
   const res = await fetch("http://localhost:3000/api/products");
@@ -10,7 +10,7 @@ export default async function ProductsList() {
   return (
     <section className={styles["product-list-container"]}>
       <div className={styles["heading"]}>
-        <h2>New Arrivals</h2>
+        <h3>New Arrivals</h3>
       </div>
       <div className={styles["products"]}>
         {productsList.map((product) => (

@@ -3,18 +3,15 @@
 .product-list-container {
   display: flex;
   flex-direction: column;
-  gap: 24px;
-  // padding-top: 128px;
-  // padding-bottom: 128px;
 }
 
 .heading {
   display: flex;
   align-items: flex-end;
+  margin-bottom: $spacing-16px;
 
-  h2 {
+  h3 {
     flex: 1;
-    font-size: 64px;
   }
 }
 
@@ -22,8 +19,8 @@
   display: grid;
   grid-template-columns: 1fr 1fr 1fr 1fr;
   grid-template-rows: repeat(2, auto);
-  row-gap: 24px;
-  column-gap: 24px;
+  row-gap: $spacing-24px;
+  column-gap: $spacing-24px;
 }
 
 .see-all-btn {

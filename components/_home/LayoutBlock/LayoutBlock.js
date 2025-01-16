@@ -1,7 +1,6 @@
 import ProductsList from "../ProductsList/ProductsList";
 import styles from "./LayoutBlock.module.scss";
-import CardSingleContent from "../CardSingleContent/CardSingleContent";
-import CategoriesList from "../CategoriesList/CategoriesList";
+import CardSingleContent from "../../CardSingleContent/CardSingleContent";
 
 export default function LayoutBlock({ name }) {
   return (
@@ -12,17 +11,20 @@ export default function LayoutBlock({ name }) {
           <div className={styles["men-women-collection"]}>
             <CardSingleContent
               title="Men"
-              bgImage="/images/ski1.jpg"
+              bgImage="/images/img1.webp"
               color="#242424"
+              minWidth="50%"
+              minHeight="500px"
             />
             <CardSingleContent
               title="Women"
-              bgImage="/images/ski10.jpg"
-              color="white"
+              bgImage="/images/img4.webp"
+              color="#242424"
+              minWidth="50%"
+              minHeight="500px"
             />
           </div>
         )}
-        {name === "categories" && <CategoriesList />}
       </section>
     </>
   );

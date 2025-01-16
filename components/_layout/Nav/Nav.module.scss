@@ -4,7 +4,7 @@
   display: flex;
   justify-content: space-between;
   background-color: white;
-  padding: 0.5rem $padding-56px 0.5rem $padding-56px;
+  padding: 0.5rem $spacing-56px 0.5rem $spacing-56px;
   position: relative;
   z-index: 4;
 }
@@ -20,18 +20,17 @@
   display: flex;
   align-items: center;
   justify-content: center;
-  gap: 1.5rem; //24px
+  gap: $spacing-24px;
 }
 
 .secondary-nav {
-  gap: 1.5rem; //24px
+  gap: $spacing-24px;
 }
 
 .secondary-nav li {
   display: flex;
   align-items: center;
   justify-content: center;
-  gap: 0.25rem;
 }
 
 .secondary-nav span {

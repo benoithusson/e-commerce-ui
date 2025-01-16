@@ -3,21 +3,11 @@
 .header-container {
   width: 100%;
   position: relative;
-  // background-image: url("/images/ski9.jpg");
-  // background-size: cover;
-  // background-position: center;
-  // background-repeat: no-repeat;
-  // min-height: 800px;
-  z-index: 0;
-
-  &::before {
-    content: "";
-    position: absolute; /* Pour recouvrir complètement le conteneur */
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background: rgba(0, 0, 0, 0); /* Couleur noire avec 50% d'opacité */
-    z-index: 1; /* Place l'overlay au-dessus de l'image */
-  }
+  min-height: 700px;
+  max-height: 700px;
+  background-image: url("/images/img2.webp");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  object-fit: cover;
 }
