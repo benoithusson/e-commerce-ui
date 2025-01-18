@@ -1,6 +1,7 @@
 import ProductsList from "../ProductsList/ProductsList";
-import styles from "./LayoutBlock.module.scss";
 import CardSingleContent from "../../CardSingleContent/CardSingleContent";
+import CategoriesList from "../CategoriesList/CategoriesList";
+import styles from "./LayoutBlock.module.scss";
 
 export default function LayoutBlock({ name }) {
   return (
@@ -25,6 +26,7 @@ export default function LayoutBlock({ name }) {
             />
           </div>
         )}
+        {name === "categories" && <CategoriesList />}
       </section>
     </>
   );

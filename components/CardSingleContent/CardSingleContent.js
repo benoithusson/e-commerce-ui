@@ -5,9 +5,11 @@ export default function CardSingleContent({
   title,
   bgImage,
   color,
+  bgColor,
   minWidth,
   minHeight,
-  clipPath,
+  maxWidth,
+  maxHeight,
 }) {
   return (
     <Link href="" legacyBehavior>
@@ -16,9 +18,12 @@ export default function CardSingleContent({
         className={styles["card-container"]}
         style={{
           "--bg-image": `url(${bgImage})`,
+          "--bg-color": `${bgColor}`,
           "--color": `${color}`,
           "--min-width": `${minWidth}`,
           "--min-height": `${minHeight}`,
+          "--max-width": `${maxWidth}`,
+          "--max-height": `${maxHeight}`,
         }}
       >
         <h2>{title}</h2>

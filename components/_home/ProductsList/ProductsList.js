@@ -8,9 +8,10 @@ export default async function ProductsList() {
   const productsList = await res.json();
 
   return (
-    <section className={styles["product-list-container"]}>
+    <div className={styles["products-list"]}>
       <div className={styles["heading"]}>
         <h3>New Arrivals</h3>
+        <Link href="">See all</Link>
       </div>
       <div className={styles["products"]}>
         {productsList.map((product) => (
@@ -22,9 +23,6 @@ export default async function ProductsList() {
           />
         ))}
       </div>
-      <div className={styles["see-all-btn"]}>
-        <Button label="See all" />
-      </div>
-    </section>
+    </div>
   );
 }

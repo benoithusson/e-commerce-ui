@@ -6,6 +6,7 @@ export default function Home() {
     <main className={styles["home-page-container"]}>
       <LayoutBlock name="products-new-arrival" />
       <LayoutBlock name="men-women-collection" />
+      <LayoutBlock name="categories" />
     </main>
   );
 }

@@ -1,6 +1,6 @@
 @use "../../../styles/variables.scss" as *;
 
-.product-list-container {
+.products-list {
   display: flex;
   flex-direction: column;
 }
@@ -21,8 +21,4 @@
   grid-template-rows: repeat(2, auto);
   row-gap: $spacing-24px;
   column-gap: $spacing-24px;
-}
-
-.see-all-btn {
-  text-align: center;
 }

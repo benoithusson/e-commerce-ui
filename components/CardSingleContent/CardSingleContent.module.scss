@@ -5,10 +5,12 @@
   min-width: var(--min-width);
   min-height: var(--min-height);
   background-image: var(--bg-image);
+  background-color: var(--bg-color);
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
   z-index: 2;
+  border-radius: 5px;
 }
 
 .card-container h2 {

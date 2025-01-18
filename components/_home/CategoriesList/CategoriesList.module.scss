@@ -1,0 +1,18 @@
+.categories-list {
+  background-color: skyblue;
+}
+
+.heading {
+  background-color: green;
+}
+
+.categories {
+  display: grid;
+  align-items: stretch;
+  grid-template-columns: repeat(3, 1fr); // 3 colonnes de largeur égale
+  grid-template-rows: repeat(3, 1fr); // 3 lignes de hauteur égale
+  gap: 10px; // Espacement entre les éléments
+  width: 300px;
+  height: 300px;
+  gap: 24px;
+}
