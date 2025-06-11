@@ -5,9 +5,17 @@
 }
 
 .image-container {
-  border-radius: 5px;
+  border-radius: 8px;
   background-color: rgb(239, 239, 239);
   padding: 1rem 0 1rem 0;
+  position: relative;
+
+  .icon {
+    position: absolute;
+    top: 0;
+    right: 0;
+    padding: 20px;
+  }
 }
 
 .product-details-container {
@@ -15,13 +23,11 @@
 
   .name-and-price {
     flex: 1;
-    padding: 0.5rem;
-  }
+    padding: 0.5rem 0 0.5rem 0;
 
-  .add-to-cart-icon {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex: 1;
+    .price {
+      font-weight: $font-weight-light;
+      color: $font-secondary;
+    }
   }
 }

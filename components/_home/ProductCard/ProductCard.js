@@ -1,4 +1,3 @@
-"use client";
 import styles from "./ProductCard.module.scss";
 import Image from "next/image";
 
@@ -15,14 +14,14 @@ export default function ProductCard({ name, price, path }) {
           priority
           alt=""
         />
+        <div className={styles["icon"]}>
+          <img src="../../icons/heart.svg" width={24} height={24} />
+        </div>
       </div>
       <div className={styles["product-details-container"]}>
         <div className={styles["name-and-price"]}>
-          <p>{name}</p>
-          <p>€ {price}</p>
-        </div>
-        <div className={styles["add-to-cart-icon"]}>
-          <icon>icon</icon>
+          <p className={styles["name"]}>{name}</p>
+          <p className={styles["price"]}>€ {price}</p>
         </div>
       </div>
     </div>

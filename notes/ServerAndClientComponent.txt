@@ -12,7 +12,7 @@ A - Les composants rendu côté serveur (Server Components)
     - Optimisation du SEO : Le seveur renvoit au navigateur une page avec un contenu complet ce qui permet aux moteurs de recherche de l'indexer rapidement, sans avoir besoin d'attendre que le JavaScript soit exécuté pour récupérer les données.
 
 3- Quand les utiliser ?
-    - Quand j'ai besoin de données avant que la page s'affiche :  si tu veux afficher une liste de produits dès le début.
+    - Quand j'ai besoin de données avant que la page s'affiche : si tu veux afficher une liste de produits dès le début.
     - Utile pour des pages qui nécessitent beaucoup de données à charger avant de les afficher, comme des pages de produits, des blogs, ou des articles.
 
 4 - Exemple fonctionnement

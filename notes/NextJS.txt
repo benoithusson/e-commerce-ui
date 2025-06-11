@@ -1,6 +1,6 @@
 1. Qu'est-ce que Next.js ?
 Next.js est un framework JavaScript basé sur React qui permet de créer des applications web et des sites statiques de manière simple et rapide.
-Il offre des fonctionnalités intégrées pour le routage, la gestion des pages, et le rendement des applications, ce qui simplifie le développement d'applications React.
+Il offre des fonctionnalités comme le routage, la gestion des pages, et le rendement des applications, ce qui simplifie le développement d'applications React.
 
 2. Principaux avantages de Next.js :
 
