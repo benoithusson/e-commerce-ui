@@ -1,35 +1,24 @@
 import styles from "./CategoriesList.module.scss";
-import CardSingleContent from "../../CardSingleContent/CardSingleContent";
+import CardCategorie from "../../CardCategorie/CardCategorie";
 
 export default function CategoriesList() {
   return (
-    <div className={styles["categories-list"]}>
+    <div className={styles["list-container"]}>
       <div className={styles["heading"]}>
         <h3>Categories</h3>
       </div>
       <div className={styles["categories"]}>
+        {/* Column 1 */}
         <div className="column">
-          <div>Bloc 1</div>
-          <div>Bloc 2</div>
+          <CardCategorie bgColorProps="red" />
         </div>
         <div className="column">
-          <div>Bloc 1</div>
-          <div>Bloc 2</div>
+          <CardCategorie bgColorProps="green" />
         </div>
         <div className="column">
-          <div>Bloc 1</div>
-          <div>Bloc 2</div>
+          <CardCategorie bgColorProps="blue" />
         </div>
       </div>
     </div>
   );
-}
-
-{
-  /* <CardSingleContent title="TITRE" color="white" bgColor="red" />
-        <CardSingleContent title="TITRE" color="white" bgColor="green" />
-        <CardSingleContent title="TITRE" color="white" bgColor="gray" />
-        <CardSingleContent title="TITRE" color="white" bgColor="salmon" />
-        <CardSingleContent title="TITRE" color="white" bgColor="black" />
-        <CardSingleContent title="TITRE" color="white" bgColor="purple" /> */
 }

@@ -1,7 +1,7 @@
 @use "../../../styles/variables.scss" as *;
 
 .layoutblock-container {
-  margin-top: $spacing-114px;
+  margin-top: $spacing-100px;
 }
 
 .men-women-collection {
@@ -16,7 +16,6 @@
     left: 0;
     width: 100%;
     height: 100%;
-    // background: rgba(0, 0, 0, 0.1); /* Couleur noire avec 50% d'opacité */
     z-index: 1;
   }
 }

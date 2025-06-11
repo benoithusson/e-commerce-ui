@@ -1,20 +1,18 @@
 @use "../../../styles/variables.scss" as *;
 
-.categories-list {
-  // background-color: skyblue;
+.list-container {
+  height: 100%;
 }
 
 .heading {
-  // background-color: green;
   margin-bottom: $spacing-16px;
 }
 
 .categories {
   display: flex;
-  background-color: blue;
 
   > :first-child {
-    background-color: red;
+    background-color: gray;
     width: 100%;
   }
 
@@ -24,7 +22,7 @@
   }
 
   > :last-child {
-    background-color: skyblue;
+    background-color: blue;
     width: 100%;
   }
 }

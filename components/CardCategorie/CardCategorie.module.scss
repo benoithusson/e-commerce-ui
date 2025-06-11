@@ -1,0 +1,11 @@
+@use "../../styles/variables.scss" as *;
+
+.card-categorie-container {
+  background-color: red;
+}
+
+.card-categorie {
+  width: var(--width);
+  height: var(--height);
+  background-color: var(--bgColor);
+}
