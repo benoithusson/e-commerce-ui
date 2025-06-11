@@ -24,15 +24,12 @@ export default function Nav(props) {
       <ul className={styles["secondary-nav"]}>
         <li>
           <img src="../../icons/search.svg" width={24} height={24} />
-          {/* <span>Search</span> */}
         </li>
         <li>
           <img src="../../icons/bag.svg" width={24} height={24} />
-          {/* <span>Chart (0)</span> */}
         </li>
         <li>
           <img src="../../icons/user.svg" width={24} height={24} />
-          {/* <span>Login</span> */}
         </li>
       </ul>
     </nav>

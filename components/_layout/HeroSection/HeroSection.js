@@ -1,7 +1,4 @@
-// Ajouter use client pour indiquer que c'est un composant côté serveur
-"use client";
 import styles from "./HeroSection.module.scss";
-import { useState, useEffect } from "react";
 import Button from "../../Button/Button";
 
 export default function HeroSection({ title, label, subTitle, bgImage }) {

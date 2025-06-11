@@ -1,18 +1,30 @@
+@use "../../../styles/variables.scss" as *;
+
 .categories-list {
-  background-color: skyblue;
+  // background-color: skyblue;
 }
 
 .heading {
-  background-color: green;
+  // background-color: green;
+  margin-bottom: $spacing-16px;
 }
 
 .categories {
-  display: grid;
-  align-items: stretch;
-  grid-template-columns: repeat(3, 1fr); // 3 colonnes de largeur égale
-  grid-template-rows: repeat(3, 1fr); // 3 lignes de hauteur égale
-  gap: 10px; // Espacement entre les éléments
-  width: 300px;
-  height: 300px;
-  gap: 24px;
+  display: flex;
+  background-color: blue;
+
+  > :first-child {
+    background-color: red;
+    width: 100%;
+  }
+
+  > :nth-child(2) {
+    background-color: green;
+    width: 100%;
+  }
+
+  > :last-child {
+    background-color: skyblue;
+    width: 100%;
+  }
 }

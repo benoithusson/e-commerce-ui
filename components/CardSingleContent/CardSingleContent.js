@@ -12,22 +12,20 @@ export default function CardSingleContent({
   maxHeight,
 }) {
   return (
-    <Link href="" legacyBehavior>
-      <a
-        href=""
-        className={styles["card-container"]}
-        style={{
-          "--bg-image": `url(${bgImage})`,
-          "--bg-color": `${bgColor}`,
-          "--color": `${color}`,
-          "--min-width": `${minWidth}`,
-          "--min-height": `${minHeight}`,
-          "--max-width": `${maxWidth}`,
-          "--max-height": `${maxHeight}`,
-        }}
-      >
-        <h2>{title}</h2>
-      </a>
+    <Link
+      href=""
+      className={styles["card-container"]}
+      style={{
+        "--bg-image": `url(${bgImage})`,
+        "--bg-color": `${bgColor}`,
+        "--color": `${color}`,
+        "--min-width": `${minWidth}`,
+        "--min-height": `${minHeight}`,
+        "--max-width": `${maxWidth}`,
+        "--max-height": `${maxHeight}`,
+      }}
+    >
+      <h2>{title}</h2>
     </Link>
   );
 }
