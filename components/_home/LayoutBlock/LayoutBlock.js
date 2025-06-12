@@ -1,5 +1,5 @@
 import ProductsList from "../ProductsList/ProductsList";
-import CardSingleContent from "../../CardGender/CardGender";
+import CardSingleContent from "../../_global/CardGender/CardGender";
 import CategoriesList from "../CategoriesList/CategoriesList";
 import styles from "./LayoutBlock.module.scss";
 

@@ -1,5 +1,5 @@
-import styles from "./HeroSection.module.scss";
-import Button from "../../Button/Button";
+import styles from "../../_layout/HeroSection/HeroSection.module.scss";
+import Button from "../../_global/Button/Button";
 
 export default function HeroSection({ title, label, subTitle, bgImage }) {
   return (

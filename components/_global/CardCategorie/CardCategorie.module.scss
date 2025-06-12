@@ -1,0 +1,43 @@
+@use "../../../styles/variables.scss" as *;
+
+.card-categorie-container {
+  height: 100%;
+}
+
+.card-categorie {
+  width: var(--width);
+  height: var(--height);
+  background-color: var(--bgColor);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+
+  h5 {
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    transform: scale(1);
+    color: transparent;
+    transition: all 300ms ease-out;
+  }
+
+  &:hover {
+    h5 {
+      transform: scale(1.2);
+      color: black;
+      top: 16px;
+      left: 24px;
+    }
+  }
+
+  img {
+    transform: scale(1);
+    transition: all 300ms ease-out;
+    border-radius: 8px;
+
+    &:hover {
+      transform: scale(1.02);
+    }
+  }
+}
