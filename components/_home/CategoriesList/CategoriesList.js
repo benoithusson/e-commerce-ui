@@ -11,37 +11,34 @@ export default function CategoriesList() {
         {/* Column 1 */}
         <div className={styles["column"]}>
           <CardCategorie
-            heightProps="400px"
-            imgUrlProps="/images/ski.jpg"
-            CategorieNameProps="Ski"
+            height="400px"
+            imgUrl="/images/ski.jpg"
+            CategorieName="Ski"
           />
           <CardCategorie
-            imgUrlProps="/images/parapente.jpg"
-            CategorieNameProps="Parapente"
+            imgUrl="/images/parapente.jpg"
+            CategorieName="Parapente"
           />
         </div>
         {/* Column 2 */}
         <div className={styles["column"]}>
+          <CardCategorie imgUrl="/images/hiking.jpg" CategorieName="Hiking" />
           <CardCategorie
-            imgUrlProps="/images/hiking.jpg"
-            CategorieNameProps="Hiking"
-          />
-          <CardCategorie
-            heightProps="330px"
-            imgUrlProps="/images/snowboard.jpg"
-            CategorieNameProps="Snowboard"
+            height="330px"
+            imgUrl="/images/snowboard.jpg"
+            CategorieName="Snowboard"
           />
         </div>
         {/* Column 3 */}
         <div className={styles["column"]}>
           <CardCategorie
-            heightProps="380px"
-            imgUrlProps="/images/climbing.jpg"
-            CategorieNameProps="Climbing"
+            height="380px"
+            imgUrl="/images/climbing.jpg"
+            CategorieName="Climbing"
           />
           <CardCategorie
-            imgUrlProps="/images/snowmobile.jpg"
-            CategorieNameProps="Snowmobile"
+            imgUrl="/images/snowmobile.jpg"
+            CategorieName="Snowmobile"
           />
         </div>
       </div>
