@@ -1,5 +1,5 @@
 import Nav from "../Nav/Nav";
-import HeroSection from "../HeroSection/HeroSection";
+import HeroSection from "../../_home/HeroSection/HeroSection";
 import styles from "./Header.module.scss";
 
 export default function Header(props) {

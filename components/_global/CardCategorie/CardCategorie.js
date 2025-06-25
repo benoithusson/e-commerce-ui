@@ -3,7 +3,6 @@
 import styles from "./CardCategorie.module.scss";
 import Link from "next/link";
 import Image from "next/image";
-import { useState } from "react";
 
 export default function CardCategorie({
   width,
@@ -11,15 +10,10 @@ export default function CardCategorie({
   imgUrl,
   CategorieName,
 }) {
-  const hoverState = useState(false);
+  function handleHover() {}
 
   return (
-    <Link
-      href=""
-      className={styles["card-categorie-container"]}
-      onMouseEnter={hoverState(!hoverState)}
-      onMouseLeave={hoverState(!hoverState)}
-    >
+    <Link href="" className={styles["card-categorie-container"]}>
       <div
         className={styles["card-categorie"]}
         style={{
@@ -27,14 +21,8 @@ export default function CardCategorie({
           "--height": height || "100%",
         }}
       >
-        {hoverState ? (
-          <>
-            <Image src={imgUrl} fill objectFit="cover" />
-            <h5>{CategorieName}</h5>
-          </>
-        ) : (
-          <div>YOLO</div>
-        )}
+        <Image src={imgUrl} fill style={{ objectFit: "cover" }} alt="" />
+        <h5>{CategorieName}</h5>
       </div>
     </Link>
   );

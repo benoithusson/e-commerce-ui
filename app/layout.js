@@ -1,14 +1,14 @@
 import "../styles/globals.scss";
-import Header from "../components/_layout/Header/Header";
+import Nav from "../components/_layout/Nav/Nav";
 import Footer from "../components/_layout/Footer/Footer";
 
 export default function RootLayout({ children }) {
   return (
     <html lang="en">
       <body>
-        <Header />
+        <Nav />
         {children}
-        {/* <Footer /> */}
+        <Footer />
       </body>
     </html>
   );

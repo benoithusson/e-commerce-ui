@@ -3,7 +3,7 @@ import Link from "next/link";
 
 export default function CardGender({
   title,
-  bgImage,
+  bgImageUrl,
   color,
   bgColor,
   minWidth,
@@ -16,7 +16,7 @@ export default function CardGender({
       href=""
       className={styles["card-container"]}
       style={{
-        "--bg-image": `url(${bgImage})`,
+        "--bg-image-url": `url(${bgImageUrl})`,
         "--bg-color": bgColor,
         "--color": color,
         "--min-width": minWidth,

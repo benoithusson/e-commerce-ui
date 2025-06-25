@@ -7,10 +7,10 @@ export default function Nav(props) {
     <nav className={styles["nav-container"]}>
       <ul className={styles["main-nav"]}>
         <li>
-          <Link href="">Shop</Link>
+          <Link href="/">Shop</Link>
         </li>
         <li>
-          <Link href="">Blog</Link>
+          <Link href="/posts">Blog</Link>
         </li>
         <li>
           <Link href="">Find store</Link>

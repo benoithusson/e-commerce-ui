@@ -12,14 +12,14 @@ export default function LayoutBlock({ name }) {
           <div className={styles["men-women-collection"]}>
             <CardSingleContent
               title="Men"
-              bgImage="/images/img1.webp"
+              bgImageUrl="/images/img1.webp"
               color="#242424"
               minWidth="50%"
               minHeight="500px"
             />
             <CardSingleContent
               title="Women"
-              bgImage="/images/img4.webp"
+              bgImageUrl="/images/img4.webp"
               color="#242424"
               minWidth="50%"
               minHeight="500px"

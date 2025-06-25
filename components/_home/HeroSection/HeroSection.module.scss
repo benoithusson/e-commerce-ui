@@ -6,13 +6,17 @@
   justify-content: flex-start;
   align-items: flex-start;
   height: auto;
+  background-image: url("/images/img1.webp");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
 }
 
 .hero-section-text {
   display: flex;
   flex-direction: column;
   gap: 3rem;
-  margin: 19rem $spacing-56px 0 $spacing-56px;
+  margin: 19rem $spacing-56px;
   max-width: 50%;
   color: $font-primary;
   z-index: 3;
